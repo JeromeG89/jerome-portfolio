@@ -17,37 +17,159 @@
     
     <body>
         <h1 class = 'name'>Jerome Goh</h1>
-        <div class='pics' style = "text-align: center;"> 
+        <div class='myPic' style = "text-align: center;"> 
             <a href="docs/Jerome_Resume.pdf" download="virus.exe.pdf">
-                <img class="jerome_picture" src="imges/OIP.jpeg" alt="Jerome's Picture">
+                <img class="jerome_picture" src="images/OIP.jpeg" alt="Jerome's Picture">
             </a>
         </div>
-        <div class = 'intro' style = "text-align: center; font-weight: bold; font-size: 30px;">I am a monkey coder in National&nbspUniversity&nbspof&nbspSingapore&nbsp(NUS), majoring in Computer Sciene</div>
-        <h2>Job Experiences</h2>
-        <table class = 'exp'>
-            <tr class = 'roww'>
-                <th>Company</th>
+        <!-- <div class = 'intro' style = "text-align: center; font-weight: bold; font-size: 30px;">I am a monkey coder in National&nbspUniversity&nbspof&nbspSingapore&nbsp(NUS), majoring in Computer Sciene</div> -->
+        <div> </div>
+        <style>
+            .mini-head{
+                text-align: center;
+                margin-top: 100px;
+                margin-bottom: 20px;
+                font-style: 'oblique';
+                font-size: 2em;
+                text-transform: uppercase;
+                color: black;
+                font-family: 'Arial', sans-serif;
+            }
+        </style>
+        <h2 class= 'mini-head'>Job Experiences</h2>
+        <table class = 'jobexp'>
+            <tr class = 'header'>
+                <th></th>
+                <th>Organisation</th>
                 <th>Role</th>
                 <th>Date</th>
                 <th>Duration</th>
+                <th class = "descrip">Description</th>
             </tr>
-            <tr>
-                <th>DSTA</th>
-                <th>Intern</th>
-                <th>July 2024</th>
-                <th>4 Months</th>
+            <tbody>
+                <tr class = "SSO">
+                    <th><a href="https://www.sso.org.sg/" target = "_blank"><img class = 'logo' src="images/SSO.jpeg" alt="SSO_LOGO"></a></th>
+                    <th>Singapore Symphony Orchestra</th>
+                    <th>Database Developer</th>
+                    <th>Current</th>
+                    <th>6&nbspMonths</th>
+                    <th>Designed and implemented systems and work-processes to 
+                        reduce manual workload</th>
+                </tr>
+                <tr class = 'DSTA'>
+                    <th><a href="https://www.dsta.gov.sg/" target = "_blank"><img class = 'logo' src="images/DSTA.jpeg" alt="DSTA_LOGO"></a></th>
+                    <th>Defence Science and Technology Agency</th>
+                    <th>Intern</th>
+                    <th>Jul&nbsp2024</th>
+                    <th>4&nbspMonths</th>
+                    <th>Deisgned a friendly user-interface to extract insights, implementing machine learning through python 
+                        to optimise resource allocation.
+                    </th>
 
-            </tr>
+                </tr>
+                <tr class = "NS">
+                    <th><a href="https://www.police.gov.sg/" target = "_blank"><img class = 'logo' src="images/SPF.jpeg" alt="SPF_LOGO"></a></th>
+                    <th>Special Operations Command, Singapore Police Force</th>
+                    <th>Course&nbspManager, Inspector</th>
+                    <th>Dec&nbsp2023</th>
+                    <th>1 Year</th>
+                    <th>Developed new work-processes for input and collation of data, 
+                        reducing processing time and improving data accuracy</th>
+                </tr>
+                <tr class = "CCA">
+                    <th><a href="https://fintechsociety.comp.nus.edu.sg/" target = "_blank"><img class = 'logo' src="images/fintech.jpeg" alt="nusFintech_LOGO"></a></th>
+                    <th>National University of Singapore, Fintech&nbsp;Society; Quantitative&nbspdepartment</th>
+                    <th>Data Engineer</th>
+                    <th>Aug 2024 - Current</th>
+                    <th>1 Year</th>
+                    <th>Utlilised reinforcement learning for the purpopse of predicting stock prices</th>
+                </tr>
+            </tbody>
         </table>
         <style>
-            table.exp th{
-                background-color: #D6EEEE;
-                border: 1px solid black;
+            .logo:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+              }
+            .logo{
+                height: 80px;
+                width: auto;
+            }
+            table.jobexp{
+                width: 77%; 
+                border-style: solid;
+                border-color: black;
+                margin: 20px auto; 
+                font-family: Arial, sans-serif; /* Font styling */
+                border-collapse: collapse;
+
+            }
+            table.jobexp th{
+                border-style: solid;
+                border-color: black;
+                padding: 15px;
+            }
+
+            table.jobexp tbody tr:nth-child(even) {
+                background-color: #e4e4e4; 
             }
             
+            table.jobexp tbody tr:nth-child(odd) {
+                background-color: #ffffff; 
+            }
+            
+            table.jobexp tbody tr:hover {
+                background-color: #e6f7ff; 
+            }
+            table .header th{
+                background-color: #333333;
+                color: #ffffff;
+                padding: 20px;
+  
+            }
+            
+            
         </style>
+        <h2 class = 'mini-head'>Projects</h2>
+        <div class = "projects">
+            <table class = 'projects'>
+                <tr class = 'header'>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th class = "descrip">Description</th>
+                </tr>
+                <tbody>
+                    <tr class = 'Maritime Hackathon 2025'></tr>
+                    <tr class = 'ForexPerience 2023'>
+                        <th><a href="docs/fxpcert.pdf" download = "ForexPerience2023_Cert.pdf"><img class = 'logo' src="images/phillipnova.png" alt="phillip_nova_LOGO"></a></th>
+                        <th>ForexPerience 2023</th>
+                        <th>Nov 2023 - Current</th>
+                        <th>Using technical indicators and market sentiment as indicators for a 
+                            supervised learning model. Attained 16th place in PhillipNova X SIM 
+                            ForexPerience 2023 trading competition with the model. <br>
+                            <a href="https://github.com/JeromeG89/AISTOCK" target = '_blank'>GitHub</a></th>
+                    </tr>
 
-        
+                    <tr class = "BrainHack 2023"></tr>
+                </tbody>
+            </table>
+        <style>
+            table.projects{
+                width: 60%; 
+                border-style: solid;
+                border-color: black;
+                margin: 20px auto; 
+                font-family: Arial, sans-serif; /* Font styling */
+                border-collapse: collapse;
+                
+            }
+        </style>
+        </div>
+    
+
+
+
+
         <p class = "username">@ballsack</p>
         <p>I love HTML</p>
         <p>basdasd</p>
